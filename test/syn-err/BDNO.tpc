@@ -1,0 +1,6 @@
+char x;
+char test(void) {
+    char res = 'a
+';
+    retutn res;
+}

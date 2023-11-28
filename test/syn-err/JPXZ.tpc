@@ -1,0 +1,2 @@
+/* Ne compile pas sans espaces, comme en C...*/
+void funC(inti_n_t_,charc_h_a_r_){return retval;}

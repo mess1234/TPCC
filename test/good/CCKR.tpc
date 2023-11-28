@@ -1,0 +1,15 @@
+char a, b, c;
+int x, y;
+
+void nothing(void) { return; }
+
+int main(void)
+{
+    int one, two;
+    int three;
+    three = one + two;
+    while (1)
+        nothing();
+
+    return two;
+}

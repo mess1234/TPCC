@@ -1,0 +1,24 @@
+int main(void) {
+    return 0;
+}
+
+int geti(void) {
+    int res = 0;
+    char c = getchar();
+    if ('0' > c || c > '9')
+        return 5; // EXIT
+    while ('0' <= c || c <= '9')
+    {
+        res = 10 * res + c - '0';
+        c = getchar();
+    }
+    return res;
+}
+
+void puti(int x) {
+    int q = x / 10;
+    int r = x % 10;
+    if (q != 0)
+        puti(q);
+    putchar('0' + r);
+}

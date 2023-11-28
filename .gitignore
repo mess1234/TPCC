@@ -1,0 +1,5 @@
+bin/
+obj/
+doc/
+_anonymous.asm
+test/results.log

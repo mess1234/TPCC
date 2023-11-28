@@ -1,0 +1,12 @@
+NAME
+	tpcc - TPC Compiler
+USAGE
+	tpcc [OPTIONS]
+DESCRIPTION
+	Compile standard input from TPC to nasm
+OPTIONS
+	-h  --help	Print this help and quit
+	-t  --tree	Print syntax tree
+	-s  --symtabs	Print all symbol tables
+NOTES
+	If lanched with the help option, doesn't compile input and returns 0

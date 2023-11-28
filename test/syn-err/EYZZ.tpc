@@ -1,0 +1,6 @@
+int main(void)
+{
+    IF (0)
+        return 12;
+    return 0;
+}

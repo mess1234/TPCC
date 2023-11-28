@@ -1,0 +1,3 @@
+void fct(void) {
+int char=123;
+}

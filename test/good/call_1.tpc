@@ -1,0 +1,23 @@
+int main(void) {
+    int x = f(1, 2, 3, '4', '5', '6', '7');
+    return x;
+}
+
+int f(int x, int y, int z, char a, char b, char c, char d)
+{
+    putchar('0' + x);
+    putchar('\n');
+    putchar('0' + y);
+    putchar('\n');
+    putchar('0' + z);
+    putchar('\n');
+    putchar(a);
+    putchar('\n');
+    putchar(b);
+    putchar('\n');
+    putchar(c);
+    putchar('\n');
+    putchar(d);
+    putchar('\n');
+    return x + a;
+}

@@ -1,0 +1,21 @@
+int main(void) {
+    rect(3, 10);
+    return 0;
+}
+
+int rect(int h, int w) {
+    int y = 0;
+    while (y < h) {
+        line(w);
+        putchar('\n');
+        y = y + 1;
+    }
+}
+
+int line(int w) {
+    int x = 0;
+    while (x < w) {
+        putchar('*');
+        x = x + 1;
+    }
+}

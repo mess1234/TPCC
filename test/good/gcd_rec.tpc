@@ -1,0 +1,23 @@
+int main(void) {
+    int x = 456;
+    int y = 864;
+
+    putint(x);
+    putchar(' ');
+    putint(y);
+    putchar('\n');
+
+    putint(gcd(x, y));
+    putchar('\n');
+
+    return 0;
+}
+
+/* return the gcd of two nonnegative integers */
+int gcd(int a, int b) {
+    if (a < b)
+        return gcd(b, a); // ensure a >= b
+    if (b == 0)
+        return a;
+    return gcd(a - b, b);
+}

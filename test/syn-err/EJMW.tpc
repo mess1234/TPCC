@@ -1,0 +1,5 @@
+char supplier(void) {
+    char res;
+    res = '\n\n';
+    return res
+}

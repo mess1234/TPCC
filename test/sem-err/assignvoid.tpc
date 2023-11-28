@@ -1,0 +1,9 @@
+void f(char c) {
+    return;
+}
+
+int main(void) {
+    int x;
+    x = f('a');
+    return 0;
+}

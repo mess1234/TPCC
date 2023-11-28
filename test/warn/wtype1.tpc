@@ -1,0 +1,5 @@
+int main(void) {
+    int x = 123;
+    char c = x;
+    return 0;
+}

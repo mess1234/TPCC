@@ -1,0 +1,85 @@
+int code;
+
+int main(void) {
+    code = test_compaison();
+    if (code)
+        return code;
+
+    code = test_logic();
+    if (code)
+        return code;
+
+    code = test_arithbool();
+    if (code)
+        return code;
+
+    code = test_boolarith();
+    if (code)
+        return code;
+
+    return 0;
+}
+
+/* return nonzero if error */
+int test_compaison(void) {
+    int x;
+    if (0 == 1)
+        return 10;
+    if (x != x)
+        return 11;
+    if (123 >= 456)
+        return 12;
+    if (200 < -15)
+        return 13;
+    return 0;
+}
+
+/* return nonzero if error */
+int test_logic(void) {
+    int x, y;
+    if (0)
+        return 14;
+    if ( !( 55 ) )
+        return 15;
+    if (0 || 0)
+        return 16;
+    if (0 && 1)
+        return 17;
+    if ( !(x || y) != (!x && !y) )
+        return 18;
+    return 0;
+}
+
+/* return nonzero if error */
+int test_arithbool(void) {
+    int x;
+    x = 12 * 5;
+    if( !( x % 5 ) )
+        x = x / 5;
+    if (x != 12)
+        return 19;
+    x = 12 * 5 + 3;
+    if( !( x % 5 ) )
+        x = x / 5;
+    if (x != 12 * 5 + 3)
+        return 20;
+    return 0;
+}
+
+/* return nonzero if error */
+int test_boolarith(void) {
+    int x, y, z;
+    x = 123;
+    y = 123;
+    z = 200;
+    x = !( x == y || x > z);
+    if (x != 0)
+        return 21;
+    x = 123;
+    y = 456;
+    z = 789;
+    x = !( x == y || x > z);
+    if (x != 1)
+        return 22;
+    return 0;
+}

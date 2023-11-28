@@ -1,0 +1,8 @@
+int main(void) {
+    putchar('a');
+    return 0;
+}
+
+int test(int z, char a, char b) {
+    return '0';
+}

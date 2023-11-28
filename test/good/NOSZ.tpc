@@ -1,0 +1,10 @@
+/* test good 1 */
+
+int y;  // vertical
+int x;  // horizontal
+
+int main(void)
+{
+    char c = '\\';
+    return 0;
+}

@@ -1,0 +1,12 @@
+int f(char c) {
+
+    return 3;
+}
+
+int main(void)
+{
+    int x, y;
+    x = y - (16 - 4);
+    f(1,2,3,4); // bad args
+    return 0;
+}
